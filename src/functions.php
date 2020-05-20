@@ -82,5 +82,5 @@ namespace Cast\Crypto\Sha2;
  * @return string
  */
 function sha256($str, $ig_func = false) {
-    return Sha2::hash($str, $ig_func);
+    return (new Sha2())->hash($str, $ig_func);
 }
